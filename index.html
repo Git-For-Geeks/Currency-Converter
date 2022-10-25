@@ -110,6 +110,12 @@ h2 {
 .select:hover::after {
     border-color: #363636;
 }
+.convertbtn{
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1em;
+}
 </style>
 </head>
 
@@ -135,11 +141,11 @@ h2 {
         </div>
         <div class="colmun col-right">
           <div class="select">
-            <select name="currency" class="currency" onchange="updatevalue()"></select>
+            <select name="currency" class="currency"></select>
           </div>
         </div>
       </div>
-
+      <button class="convertbtn" onclick="updatevalue()">Convert</button>
     </div>
   </div>
 
